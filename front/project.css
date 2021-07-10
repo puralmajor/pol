@@ -12,6 +12,10 @@
   justify-content: center;
   position: relative;
 }
+
+li{ 
+  color: white;
+}
 .menu li a {
   display: block;
   padding: 8px;
