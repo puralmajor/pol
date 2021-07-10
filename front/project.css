@@ -44,6 +44,12 @@ li{
 .card:hover {
   background-color: yellow;
 }
+.infocard {
+  border: solid 2px #a9a8f0;
+  border-radius: 20px;
+  background-color: #f3f8a7;
+  padding: 10px;
+}
 
 #slide {
   position: relative;
@@ -139,3 +145,5 @@ li{
 #slide .indi > li:first-child {
   margin-left: 0;
 }
+
+
