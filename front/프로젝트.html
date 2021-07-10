@@ -7,6 +7,15 @@
         <script>
             
         </script>
+        <style>
+            div{
+                float: left;
+                margin: 10px;
+            }
+            form{
+                clear: both;
+            }
+        </style>
     </head>
     <body>
         <h1 style="text-align:left; color:black;">석찬세의 정치정보</h1>
@@ -27,13 +36,26 @@
                 <p style="text-align: center;">국민의 힘 대표</p>
             </div>
         </div>
+        <div class="card" id="lee" style="width:200px;" onmouseover="color_change()">
+            <img src="./이준석.png" alt="국민의 힘 로고", style="width:100%;">
+            <div class="container">
+                <h4 style="text-align: center;"><b>이준석</b></h4>
+                <p style="text-align: center;">국민의 힘 대표</p>
+            </div>
+        </div>
+        <div class="card" id="lee" style="width:200px;" onmouseover="color_change()">
+            <img src="./이준석.png" alt="국민의 힘 로고", style="width:100%;">
+            <div class="container">
+                <h4 style="text-align: center;"><b>이준석</b></h4>
+                <p style="text-align: center;">국민의 힘 대표</p>
+            </div>
+        </div>
         <form name="myform">
             <input type="text" name="txt1" id="txt1">
             +
             <input type="text" name="txt2" id="txt2">
             <input type="button" value="=" onClick="plus();">
-            <input type="text" name="txt3" id="txt3">
-            
+            <input type="text" name="txt3" id="txt3">            
         </form>
     </body>
 </html>
