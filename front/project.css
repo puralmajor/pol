@@ -12,10 +12,11 @@
   justify-content: center;
   position: relative;
 }
+
 li{ 
   color: white;
 }
-li a {
+.menu li a {
   display: block;
   padding: 8px;
   text-align: center;
@@ -23,13 +24,12 @@ li a {
   text-decoration: none;
   color: white;
 }
-
-li a:hover {
+.menu li a:hover {
   background-color: white;
   color: black;
 }
 
-.active {
+.menu .active {
   background-color: white;
   color: black;
 }
@@ -43,4 +43,99 @@ li a:hover {
 
 .card:hover {
   background-color: yellow;
+}
+
+#slide {
+  position: relative;
+  overflow: hidden;
+  width: 300px;
+  height: 300px;
+}
+
+#slide .cnt > li {
+  position: absolute;
+  top: 0;
+  left: 300px;
+  width: 450px;
+  height: 600px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 300px;
+  color: #fff;
+  list-style-type: none;
+}
+
+#slide .cnt > li:nth-child(1) {
+  background-color: #9fcbfa;
+}
+
+#slide .cnt > li:nth-child(2) {
+  background-color: #ee8782;
+}
+
+#slide .cnt > li:nth-child(3) {
+  background-color: #f9ceae;
+}
+
+#slide .cnt > li:nth-child(4) {
+  background-color: #fff2c6;
+}
+
+#slide .btn > button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 0;
+  padding: 5px;
+  background-color: rgba(156, 156, 156, 0);
+}
+
+#slide .btn .prev {
+  left: 5px;
+}
+
+#slide .btn .next {
+  right: 5px;
+}
+
+#slide .auto > button {
+  display: none;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  border: 0;
+  padding: 5px;
+  background-color: rgba(156, 156, 156, 0);
+}
+
+#slide .indi {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#slide .indi:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#slide .indi > li {
+  float: left;
+  margin-left: 5px;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+  opacity: 0.5;
+  background-color: none;
+}
+
+#slide .indi > li.on {
+  opacity: 1;
+}
+
+#slide .indi > li:first-child {
+  margin-left: 0;
 }
