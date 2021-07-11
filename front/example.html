@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
         <title>올바른 사회를 위한 길</title>
        
         <link rel="stylesheet" type="text/css" href="./project.css">
@@ -29,49 +30,59 @@
                 display: flex;
                 box-sizing: border-box;
                 margin-left: 300px;
-                margin-top: 200px;
+                margin-top: 100px;
             }
 
-            .pol_menu {
-                list-style-type: none;
-                padding: 0;
-                overflow: hidden;
-                text-align: center;
+            #pol_menu {
                 width: 100%;
-                float: left;
-                display: block;
-                background-color: rgba(255, 255, 255, 0.87);
+                height: 100%;
             }
+            #pol_menu ul {
+                width: 900px;
+                margin: 0 auto;
+                overflow: hidden;
+            }
+
             .pol_each {
-                padding-left: 100px;
-                display: inline;
-                justify-content: center;
-                position: relative;
-                color: black;
-                border: 2px solid rgba(0, 0, 0, 0.479);
-                width: fit-content;
                 float: left;
+                width: 20%;
+                height: 100%;
+                background-color: white;
+                color: black;
+                list-style-type: none;
+                border-left: 1px solid black;
+                margin-right: 5px;
             }
-            .pol_each > p {
+            .pol_each:hover {
+                background-color: black;
+                color: white;
+            }
+            .pol_each p {
                 display: block;
                 padding: 8px;
                 text-align: center;
                 text-decoration: none;
                 font-size: 16px;
                 font-weight: 600;
+                box-sizing: border-box;
+                margin: 0;
             }
-            .pol_page{
-                background-color: rgba(255, 255, 255, 0.87);
-                clear: both;
-                max-width: 100%;
-                width: 100%;
-                height: 600px;
-                
+            #pol_page{
+                clear:left;
+                background-color: white;
+                height: fit-content;
+                color: black;
+                width: 900px;
+                margin: 0 auto;
+                box-sizing: border-box;
+                padding: 8px;
+                margin-left: 40px;
+                height: fit-content;
             }
         </style>
         <script src="project.js"></script>
     </head>
-    <body style="background-image:url(./img/배경2.jpg); background-size: 100%;">
+    <body style="background-image:url(./public/img/배경2.jpg); background-size: 100%;">
         <h2 style="background-color: rgba(185, 151, 129, 0.836); color: white; width:300px; text-align: center; border-radius: 5px;"><a href="main.html" style="text-decoration: none; color: white;">올바른 사회를 위한 길</a></h2>
         <div class="list">
             <ul class="menu">
@@ -83,15 +94,26 @@
             </ul>
         </div>
         <form name="polic_card">
-            <ul class="pol_menu">
-                <li class="pol_each"><p>이재명</p></li>
-                <li class="pol_each"><p>윤석열</p></li>
-                <li class="pol_each"><p>이낙연</p></li>
-                <li class="pol_each"><p>정세균</p></li>
-                <li style="clear:both;"></li>
-            </ul><br>
-            <div class="pol_page">
-                <h2></h2>
+            <div id="pol_menu">
+                <ul>
+                    <li class="pol_each"><p>이재명</p></li>
+                    <li class="pol_each"><p>윤석열</p></li>
+                    <li class="pol_each"><p>이낙연</p></li>
+                    <li class="pol_each"><p>정세균</p></li>
+                </ul>
+                <p id="pol_page">
+                    <img src="./public/img/이준석.png" style="width: 25%; height: 200px;">
+                    이준석<br>
+                    여가부 폐지<br>
+                    여가부 스레기<br>
+                    페미 다 뒤져라<br>
+                    dfasff<br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </p>
             </div>
         </form>
     </body>
