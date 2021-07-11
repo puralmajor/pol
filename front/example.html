@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>올바른 사회를 위한 길</title>
+       
+        <link rel="stylesheet" type="text/css" href="./project.css">
+        <style>
+            .box1{
+                text-shadow: 1px 1px 1px gray;
+                width: 100%;
+                padding-left: 100px;
+                color: rgb(37, 37, 37);
+                box-sizing: border-box;
+                height: 40px;
+            }
+            .box1 > h2 {
+                padding-bottom: 10px;
+                padding-top: 0px;
+            }
+            .list {
+                text-align: center;
+            }
+            div > a {
+                margin: 0px;
+            }
+            form {
+                color: black;
+                width: 900px;
+                display: flex;
+                box-sizing: border-box;
+                margin-left: 300px;
+                margin-top: 200px;
+            }
+
+            .pol_menu {
+                list-style-type: none;
+                padding: 0;
+                overflow: hidden;
+                text-align: center;
+                width: 100%;
+                float: left;
+                display: block;
+                background-color: rgba(255, 255, 255, 0.87);
+            }
+            .pol_each {
+                padding-left: 100px;
+                display: inline;
+                justify-content: center;
+                position: relative;
+                color: black;
+                border: 2px solid rgba(0, 0, 0, 0.479);
+                width: fit-content;
+                float: left;
+            }
+            .pol_each > p {
+                display: block;
+                padding: 8px;
+                text-align: center;
+                text-decoration: none;
+                font-size: 16px;
+                font-weight: 600;
+            }
+            .pol_page{
+                background-color: rgba(255, 255, 255, 0.87);
+                clear: both;
+                max-width: 100%;
+                width: 100%;
+                height: 600px;
+                
+            }
+        </style>
+        <script src="project.js"></script>
+    </head>
+    <body style="background-image:url(./img/배경2.jpg); background-size: 100%;">
+        <h2 style="background-color: rgba(185, 151, 129, 0.836); color: white; width:300px; text-align: center; border-radius: 5px;"><a href="main.html" style="text-decoration: none; color: white;">올바른 사회를 위한 길</a></h2>
+        <div class="list">
+            <ul class="menu">
+                <li><a href="./new.html">소개</a></li>
+                <li><a href="">정책</a></li>
+                <li><a href="">선거정보</a></li>
+                <li><a href="./후보.html">후보</a></li>
+                <li style="margin-left: 600px;"><a href="" style="font-size:14px;">About</a></li>
+            </ul>
+        </div>
+        <form name="polic_card">
+            <ul class="pol_menu">
+                <li class="pol_each"><p>이재명</p></li>
+                <li class="pol_each"><p>윤석열</p></li>
+                <li class="pol_each"><p>이낙연</p></li>
+                <li class="pol_each"><p>정세균</p></li>
+                <li style="clear:both;"></li>
+            </ul><br>
+            <div class="pol_page">
+                <h2></h2>
+            </div>
+        </form>
+    </body>
