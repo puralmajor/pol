@@ -13,13 +13,45 @@
   position: relative;
 }
 
+
+/* addition*/
 .menu_정책 {
-  padding-left: 100px;
+  padding-left: 140px;
   float: left;
   display: inline;
   justify-content: center;
   position: relative;
 }
+
+
+.menu_정책 li {
+  padding-left: 100px;
+  float: initial;
+  display: inline;
+  justify-content: center;
+  position: relative;
+}
+
+
+.menu_정책 li a {
+  display: block;
+  padding: 5px;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: white;
+}
+.menu_정책 li a:hover {
+  background-color: rgba(255, 255, 255, 0.288);
+  color: black;
+}
+
+.menu_정책 .active {
+  background-color: white;
+  color: black;
+}
+
+
 
 
 li{ 
